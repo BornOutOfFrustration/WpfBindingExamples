@@ -22,7 +22,21 @@ namespace WpfBindingExamples
     {
         public MainWindow()
         {
+            DataContext = "heelo";
             InitializeComponent();
+        }
+
+        private void ButtonNoPath_Click(object sender, RoutedEventArgs e)
+        {
+            var window = new Window1();
+            window.DataContext = "Hello, Datacontext is a string. {Binding} or {Binding Path=.} binds the first DataContext it can find.";
+            window.Show();
+        }
+
+        private void ButtonAttachedProperty_Click(object sender, RoutedEventArgs e)
+        {
+            var window = new Window2();
+            window.Show();
         }
     }
 }

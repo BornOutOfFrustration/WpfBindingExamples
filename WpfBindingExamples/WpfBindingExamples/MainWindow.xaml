@@ -7,6 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Button x:Name="ButtonNoPath" Content="Binding with {Binding}" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="166" Click="ButtonNoPath_Click"/>
+        <Button x:Name="ButtonAttachedProperty" Content="Binding to attached property" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top" Width="166" Click="ButtonAttachedProperty_Click"/>
+
     </Grid>
 </Window>
